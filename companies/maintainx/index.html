@@ -53,6 +53,50 @@
             color: #3b82f6;
             font-weight: bold;
         }
+        
+        /* Subtle Animations */
+        .print-container {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-header {
+            transition: all 0.3s ease;
+        }
+        
+        .section-header:hover {
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+        }
+        
+        .achievement-item {
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        
+        .achievement-item:hover {
+            transform: translateX(4px);
+            color: #1f2937;
+        }
+        
+        .print-container section {
+            animation: fadeInUp 0.6s ease-out;
+            animation-fill-mode: both;
+        }
+        
+        .print-container section:nth-child(1) { animation-delay: 0.1s; }
+        .print-container section:nth-child(2) { animation-delay: 0.2s; }
+        .print-container section:nth-child(3) { animation-delay: 0.3s; }
+        .print-container section:nth-child(4) { animation-delay: 0.4s; }
+        .print-container section:nth-child(5) { animation-delay: 0.5s; }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
@@ -64,10 +108,10 @@
             <h1 class="text-3xl font-bold text-gray-800 mb-2">Tulio Diaz</h1>
             <p class="text-lg text-gray-600 mb-4">Software Architect | Full-Stack Developer</p>
             <div class="flex flex-wrap gap-4 text-sm text-gray-600">
-                <span>📧 tuliodiaz126@gmail.com</span>
+                <span>📧 <a href="mailto:tuliodiaz126@gmail.com" class="text-blue-600 hover:text-blue-800">tuliodiaz126@gmail.com</a></span>
                 <span>📱 5149195709</span>
                 <span>📍 Montreal, Canada</span>
-                <span>💼 www.linkedin.com/in/tuliodiaz</span>
+                <span>💼 <a href="https://www.linkedin.com/in/tuliodiaz" target="_blank" class="text-blue-600 hover:text-blue-800">www.linkedin.com/in/tuliodiaz</a></span>
             </div>
         </div>
 
@@ -100,10 +144,10 @@
             <h1 class="text-4xl font-bold text-gray-800 mb-2">Tulio Diaz</h1>
             <p class="text-xl text-gray-600 mb-3">Software Architect | Full-Stack Developer</p>
             <div class="flex flex-wrap gap-4 text-sm text-gray-600">
-                <span>📧 tuliodiaz126@gmail.com</span>
+                <span>📧 <a href="mailto:tuliodiaz126@gmail.com" class="text-blue-600 hover:text-blue-800">tuliodiaz126@gmail.com</a></span>
                 <span>📱 5149195709</span>
                 <span>📍 Montreal, Canada</span>
-                <span>💼 www.linkedin.com/in/tuliodiaz</span>
+                <span>💼 <a href="https://www.linkedin.com/in/tuliodiaz" target="_blank" class="text-blue-600 hover:text-blue-800">www.linkedin.com/in/tuliodiaz</a></span>
             </div>
         </div>
 
