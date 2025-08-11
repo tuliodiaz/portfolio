@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulio Diaz - CV and Cover Letter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media print {
+            .page-break { page-break-before: always; }
+            body { -webkit-print-color-adjust: exact; }
+            .no-print { display: none; }
+        }
+        @page {
+            margin: 0.5in;
+            size: letter;
+        }
+        .print-container {
+            max-width: 8.5in;
+            min-height: 11in;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+        }
+        .section-header {
+            color: #1e3a8a;
+            border-left: 4px solid #3b82f6;
+            background: linear-gradient(90deg, #f8fafc 0%, #ffffff 100%);
+            padding: 8px 12px;
+            margin-bottom: 16px;
+        }
+        .job-title {
+            color: #1f2937;
+            font-weight: 600;
+        }
+        .company-info {
+            color: #6b7280;
+            font-style: italic;
+        }
+        .achievement-item {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 6px;
+        }
+        .achievement-item:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    
+    <!-- Cover Letter Page -->
+    <div class="print-container mx-auto p-8">
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Tulio Diaz</h1>
+            <p class="text-lg text-gray-600 mb-4">Software Architect | Full-Stack Developer</p>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600">
+                <span>📧 tuliodiaz126@gmail.com</span>
+                <span>📱 5149195709</span>
+                <span>📍 Montreal, Canada</span>
+                <span>💼 www.linkedin.com/in/tuliodiaz</span>
+            </div>
+        </div>
+
+        <!-- Cover Letter Content -->
+        <div class="mb-8">
+            <p class="text-gray-600 mb-6" id="current-date"></p>
+            <p class="text-gray-600 mb-6">Dear Hiring Manager,</p>
+            
+            <div class="space-y-4 text-gray-800 leading-relaxed">
+                <p>I'm Tulio Diaz, a Software Architect who works closely with Product Managers and Designers to turn ideas into applications that solve real problems for real people. For the past six years, I have been building workforce management tools in TypeScript, Vue.js, and Node.js. My work covers the full stack, from designing databases and building APIs to developing secure access systems and delivering through CI/CD pipelines to production. I mentor engineers, define architecture, and make sure decisions align with both user needs and business goals.</p>
+                
+                <p>Your React/TypeScript/GraphQL stack is directly aligned with my background. I have worked extensively with TypeScript and React, and have built mobile-first applications for field workers using NativeScript. I also have solid SQL experience, which often comes in handy for understanding and shaping data flows. What I enjoy most is seeing the real-world impact of the products I help build, especially when the people using them share how it makes their work easier or more rewarding.</p>
+                
+                <p>I'm particularly interested in your CoPilot AI assistant and the challenge of turning manuals and work order history into actionable information. Done well, this can give customers faster answers and reduce downtime. I'm excited to discuss what other ideas you have and how AI can help you.</p>
+                
+                <p>Thank you for considering my application. I would be happy to share more about my experience and learn about the challenges you are solving at MaintainX.</p>
+            </div>
+            
+            <div class="mt-8">
+                <p class="text-gray-800">Best regards,</p>
+                <p class="text-gray-800 font-semibold mt-2">Tulio Diaz</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Page -->
+    <div class="page-break print-container mx-auto p-8">
+        <!-- Header -->
+        <div class="mb-6 border-b-2 border-gray-200 pb-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Tulio Diaz</h1>
+            <p class="text-xl text-gray-600 mb-3">Software Architect | Full-Stack Developer</p>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600">
+                <span>📧 tuliodiaz126@gmail.com</span>
+                <span>📱 5149195709</span>
+                <span>📍 Montreal, Canada</span>
+                <span>💼 www.linkedin.com/in/tuliodiaz</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <section class="mb-7">
+            <h2 class="section-header text-lg font-semibold">Professional Summary</h2>
+            <p class="text-gray-800 leading-relaxed text-sm">Experienced Software Architect with extensive expertise in building workforce management solutions using TypeScript, Vue.js, and Node.js. Proven track record of collaborating with Product Managers and Designers to deliver scalable applications that solve real-world problems for frontline workers. Strong product mindset with experience translating customer needs into technical solutions, building product roadmaps, and making architectural decisions that align with business goals.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-7">
+            <h2 class="section-header text-lg font-semibold">Technical Skills</h2>
+            <div class="grid grid-cols-1 gap-2 text-sm">
+                <div><span class="font-semibold text-gray-900">Frontend:</span> <span class="text-gray-700">TypeScript, Vue.js, React, HTML5, CSS3, JavaScript (ES6+)</span></div>
+                <div><span class="font-semibold text-gray-900">Mobile:</span> <span class="text-gray-700">NativeScript, React Native (personal projects)</span></div>
+                <div><span class="font-semibold text-gray-900">Backend:</span> <span class="text-gray-700">Node.js, Ruby, Go, Java, C#</span></div>
+                <div><span class="font-semibold text-gray-900">Databases:</span> <span class="text-gray-700">MySQL, PostgreSQL, SQL Server</span></div>
+                <div><span class="font-semibold text-gray-900">Cloud & DevOps:</span> <span class="text-gray-700">AWS, Firebase, GitHub Actions, CI/CD pipelines</span></div>
+                <div><span class="font-semibold text-gray-900">API & Security:</span> <span class="text-gray-700">REST APIs, GraphQL, OAuth2, JWT, Webpack</span></div>
+                <div><span class="font-semibold text-gray-900">Tools:</span> <span class="text-gray-700">Git, Docker, Jest, Cypress, GitHub Copilot, Cline, Postman</span></div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="mb-7">
+            <h2 class="section-header text-lg font-semibold">Professional Experience</h2>
+            
+            <!-- TrackTik -->
+            <div class="mb-6">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="job-title text-base">Software Architect | TrackTik</h3>
+                        <p class="company-info text-sm">Workforce Management Software - Montreal, Canada</p>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium">November 2018 - Present</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Lead full-stack development</span> of responsive web applications using TypeScript and Vue.js serving thousands of users</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Collaborate daily with Product Managers and Designers</span> to conceptualize features and build product roadmaps</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Mentor engineering team</span> and establish coding standards, conducting comprehensive code reviews</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Architect scalable solutions</span> spanning frontend, backend, and mobile platforms for workforce management scenarios</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Developed mobile applications</span> using NativeScript with significant reach in Android and iOS app stores</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Drive technical decisions</span> in a growing SaaS environment, focusing on performance and maintainability</div>
+                </div>
+            </div>
+
+            <!-- ILABS -->
+            <div class="mb-6">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="job-title text-base">JavaScript Developer | ILABS</h3>
+                        <p class="company-info text-sm">Financial Technology Platform - Montreal, Canada</p>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium">March 2018 - November 2018</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Developed multiple features</span> for the Rebilly financial platform using modern JavaScript frameworks</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Built complex UI components</span> from simple notifications to sophisticated image capture and KYC workflows</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Collaborated in agile environment</span> with rapid feature development and deployment cycles</div>
+                </div>
+            </div>
+
+            <!-- E-panneur -->
+            <div class="mb-6">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="job-title text-base">Full-Stack Developer | E-panneur</h3>
+                        <p class="company-info text-sm">Startup Environment - Montreal, Canada</p>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium">September 2016 - March 2018</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Wore multiple technical hats</span> in a 4-person startup: full-stack developer, DBA, security analyst, and DevOps</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Built native mobile applications</span> for Android and iOS platforms</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Developed complete e-commerce solutions</span> including checkout systems and order management web applications</div>
+                </div>
+            </div>
+
+            <!-- Banking Experience -->
+            <div class="mb-5">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="job-title text-base">Project Leader | Banco Exterior</h3>
+                        <p class="company-info text-sm">Banking and Financial Services - Venezuela</p>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium">May 2013 - September 2016</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Led multiple technology projects</span> related to e-learning platforms and service-oriented architecture (SOA)</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Coordinated internal resources and external providers</span> to deliver complex financial software projects</div>
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <div class="flex justify-between items-start mb-2">
+                    <div>
+                        <h3 class="job-title text-base">Technical Lead | Banco Banesco</h3>
+                        <p class="company-info text-sm">Banking and Financial Services - Venezuela</p>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium">March 2007 - May 2013</span>
+                </div>
+                <div class="space-y-1">
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Led team supporting web banking portal</span> serving thousands of concurrent users 24/7</div>
+                    <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Gained deep experience</span> in high-availability, mission-critical financial services</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-6">
+            <h2 class="section-header text-lg font-semibold">Education</h2>
+            <div class="space-y-3">
+                <div class="flex justify-between">
+                    <div>
+                        <p class="font-semibold text-gray-900 text-sm">Master of Engineering in Quality Systems</p>
+                        <p class="text-sm text-gray-600">Concordia University - Montreal, Canada</p>
+                    </div>
+                    <span class="text-sm text-gray-600">2015 - 2017</span>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <p class="font-semibold text-gray-900 text-sm">Bachelor of Computer Science</p>
+                        <p class="text-sm text-gray-600">Universidad Nueva Esparta - Caracas, Venezuela</p>
+                    </div>
+                    <span class="text-sm text-gray-600">2002 - 2008</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements -->
+        <section class="mb-6">
+            <h2 class="section-header text-lg font-semibold">Key Achievements</h2>
+            <div class="space-y-1">
+                <div class="achievement-item text-sm text-gray-800"><span class="font-medium">6+ years focused on workforce management software</span> - directly relevant to complex business domains</div>
+                <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Mobile-first development experience</span> with applications reaching significant user bases</div>
+                <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Full-stack architecture expertise</span> across multiple programming languages and frameworks</div>
+                <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Team leadership and mentoring</span> with proven track record of improving engineering practices</div>
+                <div class="achievement-item text-sm text-gray-800"><span class="font-medium">Security and authentication expertise</span> including OAuth2, JWT, and complex access control systems</div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="mb-4">
+            <h2 class="section-header text-lg font-semibold">Languages</h2>
+            <div class="flex space-x-8 text-sm">
+                <span><span class="font-semibold text-gray-900">English:</span> <span class="text-gray-700">Fluent</span></span>
+                <span><span class="font-semibold text-gray-900">French:</span> <span class="text-gray-700">Conversational</span></span>
+                <span><span class="font-semibold text-gray-900">Spanish:</span> <span class="text-gray-700">Native</span></span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Print Button (hidden when printing) -->
+    <div class="no-print fixed top-4 right-4">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+            </svg>
+            Print PDF
+        </button>
+    </div>
+
+    <script>
+        // Render current date
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateElement = document.getElementById('current-date');
+            const today = new Date();
+            
+            // Format date as "Month Day, Year" (e.g., "August 10, 2025")
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            
+            const formattedDate = today.toLocaleDateString('en-US', options);
+            dateElement.textContent = formattedDate;
+        });
+    </script>
+</body>
+</html>
